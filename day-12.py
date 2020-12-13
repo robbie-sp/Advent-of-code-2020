@@ -122,9 +122,6 @@ def rotate_waypoint(waypoint, dir, amount):
     waypoint = np.dot(R, waypoint)
 
     waypoint = np.round(waypoint).astype(int)
-    # length = math.sqrt(waypoint[0]^2 + waypoint[1]^2)
-    # angle = math.tan(waypoint[0] / waypoint[1])
-
 
     return waypoint.tolist()
 
